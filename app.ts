@@ -75,3 +75,20 @@ sayHello();
 // function types
 let myFunction: (val1: number, val2: number) => string;
 myFunction = add;
+
+// objects
+let userData = {
+  name: 'Max',
+  age: 27,
+};
+
+let someData: { name: string, age: number };
+
+// complex object
+let complex: { data: number[], output: (all: boolean) => number[] } = {
+  data: [100, 3.99, 10],
+
+  output: function (all): number[] {
+    return this.data;
+  } 
+}
