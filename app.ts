@@ -46,9 +46,32 @@ enum Color {
   gray,
   green = 100,
   blue = 3,
-};
+}
 
 let myColor: Color = Color.green;
 
 console.log(myColor);
 console.log(Color.blue);
+
+// any
+let car: any = 'BMW';
+
+car = { brand: 'BMW', series: 3 };
+
+// functions
+function add(a: number, b: number): string {
+  return `${a + b}`;
+}
+
+console.log(add(2, 3));
+
+// void
+function sayHello(): void {
+  console.log('Hello!');
+}
+
+sayHello();
+
+// function types
+let myFunction: (val1: number, val2: number) => string;
+myFunction = add;

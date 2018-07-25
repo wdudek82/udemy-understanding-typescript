@@ -42,7 +42,22 @@ var Color;
     Color[Color["green"] = 100] = "green";
     Color[Color["blue"] = 3] = "blue";
 })(Color || (Color = {}));
-;
 var myColor = Color.green;
 console.log(myColor);
 console.log(Color.blue);
+// any
+var car = 'BMW';
+car = { brand: 'BMW', series: 3 };
+// functions
+function add(a, b) {
+    return "" + (a + b);
+}
+console.log(add(2, 3));
+// void
+function sayHello() {
+    console.log('Hello!');
+}
+sayHello();
+// function types
+var myFunction;
+myFunction = add;
