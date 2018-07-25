@@ -84,3 +84,12 @@ var complex2 = {
 var myRealRealAge;
 myRealRealAge = 27;
 myRealRealAge = '27';
+// check type
+var finalValue = 'A string';
+// never
+function neverReturn() {
+    throw new Error('An error!');
+}
+// nullable types
+var canBeNull = 12;
+canBeNull = null;
