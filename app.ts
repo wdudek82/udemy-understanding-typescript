@@ -36,7 +36,19 @@ myRealAge = 27;
 
 // array
 let hobbies: string[] = ['cooking', 'sports'];
-console.log(typeof hobbies);
+console.log(hobbies);
 
 // tuples
 let address: [string, number] = ['Superstreet', 99];
+
+// enums
+enum Color {
+  gray,
+  green = 100,
+  blue = 3,
+};
+
+let myColor: Color = Color.green;
+
+console.log(myColor);
+console.log(Color.blue);
