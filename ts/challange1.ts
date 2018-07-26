@@ -11,13 +11,13 @@ let bankAccount: Acc = {
   }
 };
 
-type Person = {
+type Human = {
   name: string,
   bankAccount: Acc,
   hobbies: string[],
 };
 
-let myself: Person = {
+let myself: Human = {
   name: "Max",
   bankAccount: bankAccount,
   hobbies: ["Sports", "Cooking"]

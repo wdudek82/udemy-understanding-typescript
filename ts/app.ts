@@ -22,3 +22,21 @@ function controlMe(isTrue: boolean, somethingElse: boolean) {
   return result;
 }
 
+let something = 108;
+
+if (true) {
+  console.log(something);
+}
+
+function makeArray(first: number, second: number, ...n: number[]): void {
+  console.log(first);
+  console.log(second);
+  console.log(n);
+}
+
+makeArray(1, 2, 3, 4, 5, 6);
+
+const arr = [12, 34, 1, 34, 21, 4];
+const [a,,,, ...b] = arr;
+
+console.log(a, b);
