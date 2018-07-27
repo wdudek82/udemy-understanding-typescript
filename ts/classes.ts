@@ -110,3 +110,20 @@ const it = new ITProject();
 
 it.changeName('name');
 console.log(it.projectName);
+
+
+// Private constructors
+class OnlyOne {
+  static instance: OnlyOne;
+
+  private constructor(public name: string) {}
+
+  static getInstance() {
+    if (!OnlyOne.instance) {
+      OnlyOne.instance = new OnlyOne('The Only One');
+    }
+    return OnlyOne.instance;
+  }
+}
+
+let one = OnlyOne.getInstance();
