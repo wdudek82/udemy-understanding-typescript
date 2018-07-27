@@ -122,4 +122,5 @@ var OnlyOne = /** @class */ (function () {
     return OnlyOne;
 }());
 var one = OnlyOne.getInstance();
+console.log(one.name);
 //# sourceMappingURL=classes.js.map

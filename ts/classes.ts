@@ -114,9 +114,12 @@ console.log(it.projectName);
 
 // Private constructors
 class OnlyOne {
-  static instance: OnlyOne;
+  private static instance: OnlyOne;
+  public readonly name: string;
 
-  private constructor(public name: string) {}
+  private constructor(name: string) {
+    this.name = name;
+  }
 
   static getInstance() {
     if (!OnlyOne.instance) {
@@ -127,3 +130,4 @@ class OnlyOne {
 }
 
 let one = OnlyOne.getInstance();
+console.log(one.name);
