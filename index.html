@@ -7,6 +7,20 @@
   <title>TypeScript</title>
 </head>
 <body>
-  <script src="ts/classes.js"></script>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script>
+    // set our baseURL reference path
+    SystemJS.config({
+      baseURL: '/ts',
+      packages: {
+        '/': {
+          defaultExtension: 'js',
+        },
+      },
+    });
+
+    // loads /ts/app.js
+    SystemJS.import('app.js');
+  </script>
 </body>
 </html>

@@ -40,3 +40,11 @@ const arr = [12, 34, 1, 34, 21, 4];
 const [a,,,, ...b] = arr;
 
 console.log(a, b);
+
+
+// Importing modules
+import calculateRectangle from './math/rectangle';
+
+const rect = calculateRectangle(10, 20);
+
+console.log('rect"', rect);

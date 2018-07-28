@@ -1,4 +1,8 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 var myTrueName = 'Max';
 var myTrueAge = 27;
 var anything;
@@ -32,4 +36,8 @@ makeArray(1, 2, 3, 4, 5, 6);
 var arr = [12, 34, 1, 34, 21, 4];
 var a = arr[0], b = arr.slice(4);
 console.log(a, b);
+// Importing modules
+var rectangle_1 = __importDefault(require("./math/rectangle"));
+var rect = rectangle_1.default(10, 20);
+console.log('rect"', rect);
 //# sourceMappingURL=app.js.map
