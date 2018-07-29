@@ -4,13 +4,16 @@
   "description": "",
   "main": "script.js",
   "scripts": {
+    "start": "concurrently 'live-server --no-browser --port=3000' 'tsc --watch'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^3.6.1",
     "eslint": "^5.2.0",
+    "live-server": "^1.2.0",
     "systemjs": "^0.21.4",
     "tslint": "^5.11.0",
     "typescript": "^2.9.2"

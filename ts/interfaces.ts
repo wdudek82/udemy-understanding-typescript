@@ -1,20 +1,22 @@
-interface NamedPerson {
-  firstName: string,
-};
+interface INamedPerson {
+  firstName: string;
+  age?: number;
+  [propName: string]: any;
+}
 
-function greet(person: NamedPerson) {
+function greet(person: INamedPerson) {
   console.log('Hello, ' + person.firstName);
 }
 
-function changeName(person: NamedPerson, newName: string) {
+function changeName(person: INamedPerson, newName: string) {
   person.firstName = newName;
 }
 
 const person2 = {
-  firstName: 'Max',
   age: 27,
-}
+  firstName: 'Max',
+};
 
-greet(person2);
+greet({ firstName: 'Foo', age: 16 });
 changeName(person2, 'Anna');
 greet(person2);
