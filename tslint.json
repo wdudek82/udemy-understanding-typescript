@@ -5,6 +5,8 @@
   "rulesDirectory": [],
   "rules": {
     "quotemark": [true, "single"],
-    "no-console": [true, "log", "warn"]
+    "no-console": [true, "log", "warn"],
+    "no-consecutive-blank-lines": [true, 2],
+    "callable-types": false
   }
 }
