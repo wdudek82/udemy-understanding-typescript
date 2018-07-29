@@ -36,5 +36,12 @@ myDoubleFunction = function (num1, num2) {
 function double(n) {
     return n * 2;
 }
-// Interface inheritance
+var oldPerson = {
+    firstName: 'John',
+    foo: 5,
+    greet: function (lastName) {
+        console.log('Hello! I\'m ' + this.firstName + ' ' + lastName);
+    },
+};
+oldPerson.greet('Smith');
 //# sourceMappingURL=interfaces.js.map

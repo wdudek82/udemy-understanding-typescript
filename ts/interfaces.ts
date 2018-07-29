@@ -63,3 +63,18 @@ function double(n: number) {
 
 
 // Interface inheritance
+interface IAgedPerson extends INamedPerson {
+  foo: any;
+}
+
+const oldPerson: IAgedPerson = {
+  firstName: 'John',
+  foo: 5,
+
+  greet(lastName: string) {
+    console.log('Hello! I\'m ' + this.firstName + ' ' + lastName);
+  },
+};
+
+oldPerson.greet('Smith');
+
