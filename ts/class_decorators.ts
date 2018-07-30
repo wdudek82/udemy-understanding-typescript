@@ -2,14 +2,14 @@ function logged(constructorFn: () => void) {
   console.log(constructorFn);
 }
 
-@logged
-class Person3 {
-  name: string;
+// @logged
+// class Person3 {
+//   name: string;
 
-  constructor(name: string) {
-    this.name = name;
-  }
-}
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
 
 
 // Factory
@@ -17,10 +17,10 @@ function logging(value: boolean) {
   return value ? logged : null;
 }
 
-@logging(true)
-class Car {
+// @logging(true)
+// class Car {
 
-}
+// }
 
 
 // Advanced
@@ -32,9 +32,9 @@ function printable(constructorFn: () => void) {
 
 @logging(true)
 @printable
-class Plant {
-  name: string = 'a plant';
+class Plant2 {
+  public name: string = 'a plant';
 }
 
-const plant1 = new Plant();
-(plant1 as any).print();
+const plant2 = new Plant2();
+(plant2 as any).print();
